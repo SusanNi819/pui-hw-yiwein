@@ -1,0 +1,14 @@
+<body>
+<h1>The Adventures of My Cat Lucky</h1>
+<div id="mainContent">
+<p>My cat Lucky has a lot of adventures. Yesterday she
+<a href="mouse.html">bcaught a mouse </a>, and today she caught two!</p>
+<p>Here's a picture of Lucky:</p>
+<img src="lucky.jpg" alt="Lucky">
+</div>
+<div id="sidebar">
+<h2>Buy our stuff!</h2>
+<p>Some of our products include <span class="product">SuperWidgets</span>
+<span class="product">MegaWidgets</span></p>
+</div>
+</body>
