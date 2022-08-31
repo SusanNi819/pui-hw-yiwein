@@ -1,0 +1,30 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+.logo-image {
+    width: 550px;
+    margin: 50px 50px;
+
+}
+.products{
+    text-align:center;
+    background-color:rgb(249, 255, 77);
+    max-width: 200px;
+    margin: 20px auto;
+}
+.cart{
+    text-align:center;
+    font-size:x-large;
+}
+
+.line{
+    background-color: black;
+    padding: 2px;
+}
+.rolls{
+    text-align:center;
+}
+.roll1{
+    width: 500px;
+}
