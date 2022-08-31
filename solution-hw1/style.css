@@ -5,17 +5,14 @@ body {
 .logo-image {
     width: 550px;
     margin: 50px 50px;
-
 }
 .products{
     text-align:center;
-    background-color:rgb(249, 255, 77);
     max-width: 200px;
     margin: 20px auto;
 }
 .cart{
     text-align:center;
-    font-size:x-large;
 }
 
 .line{
@@ -27,4 +24,10 @@ body {
 }
 .roll1{
     width: 500px;
+    border: 5px solid rgb(0, 0, 0);
+}
+.original{
+    margin:auto;
+    font-size:x-large;
+    width: 300px;
 }
