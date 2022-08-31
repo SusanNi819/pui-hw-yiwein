@@ -14,10 +14,14 @@ body {
 .cart{
     text-align:center;
 }
-
 .line{
     background-color: black;
     padding: 2px;
+}
+.details {
+    text-align:center;
+    max-width: 200px;
+    margin: 20px auto;
 }
 .rolls{
     text-align:center;
