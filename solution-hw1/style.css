@@ -82,3 +82,59 @@ button, select {
 .acr:hover {
     border:5px solid #f4ff55;
 }
+.cr3 {
+    width:310px;
+    margin: auto;
+}
+.cr3:hover {
+    background-color:#f4ff55;
+}
+.rcr {
+    width: 300px;
+    border:5px solid #000000;
+}
+.rcr:hover {
+    border:5px solid #f4ff55;
+}
+.cr4 {
+    width:310px;
+    margin: auto;
+}
+.cr4:hover {
+    background-color:#f4ff55;
+}
+.wcr {
+    width: 300px;
+    border:5px solid #000000;
+}
+.wcr:hover {
+    border:5px solid #f4ff55;
+}
+.cr5 {
+    width:310px;
+    margin: auto;
+}
+.cr5:hover {
+    background-color:#f4ff55;
+}
+.dcr {
+    width: 300px;
+    border:5px solid #000000;
+}
+.dcr:hover {
+    border:5px solid #f4ff55;
+}
+.cr6 {
+    width:310px;
+    margin: auto;
+}
+.cr6:hover {
+    background-color:#f4ff55;
+}
+.scr {
+    width: 300px;
+    border:5px solid #000000;
+}
+.scr:hover {
+    border:5px solid #f4ff55;
+}
