@@ -139,6 +139,7 @@ button, select {
 }
 .remove {
     font-size:small;
+    text-decoration:underline;
 }
 .line2{
     background-color: black;
