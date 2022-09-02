@@ -68,3 +68,17 @@ button, select {
 .ocr:hover {
     border:5px solid #f4ff55;
 }
+.cr2 {
+    width:310px;
+    margin: auto;
+}
+.cr2:hover {
+    background-color:#f4ff55;
+}
+.acr {
+    width: 300px;
+    border:5px solid #000000;
+}
+.acr:hover {
+    border:5px solid #f4ff55;
+}
