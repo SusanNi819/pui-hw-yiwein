@@ -8,7 +8,7 @@ button, select {
     font-size: 100%;
   }
 .logo-image {
-    width: 550px;
+    width: 400px;
     margin: 50px 50px;
 }
 .products{
@@ -34,7 +34,7 @@ button, select {
 }
 .roll1{
     text-align:center;
-    width: 500px;
+    width: 400px;
     border: 5px solid rgb(0, 0, 0);
 }
 .original{
@@ -54,4 +54,17 @@ button, select {
     background-color: #f4ff55;
     cursor: pointer;
 }
-
+.cr1 {
+    width:310px;
+    margin: auto;
+}
+.cr1:hover {
+    background-color:#f4ff55;
+}
+.ocr {
+    width: 300px;
+    border:5px solid #000000;
+}
+.ocr:hover {
+    border:5px solid #f4ff55;
+}
