@@ -32,6 +32,7 @@ button, select {
     background-color:#f4ff55;
     font:bold;
 }
+/* styling for the gallery page*/
 .catch-line {
     text-align:center;
 }
@@ -145,6 +146,7 @@ button, select {
     width: 300px;
     border:5px solid #000000;
 }
+/* styling for the cart page*/
 .cd {
     margin: auto;
     font-size:x-large;
