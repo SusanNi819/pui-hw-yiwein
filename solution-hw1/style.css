@@ -60,13 +60,11 @@ button, select {
 }
 .cr1:hover {
     background-color:#f4ff55;
+    border:5px solid #f4ff55;
 }
 .ocr {
     width: 300px;
     border:5px solid #000000;
-}
-.ocr:hover {
-    border:5px solid #f4ff55;
 }
 .cr2 {
     width:310px;
@@ -74,13 +72,11 @@ button, select {
 }
 .cr2:hover {
     background-color:#f4ff55;
+    border:5px solid #f4ff55;
 }
 .acr {
     width: 300px;
     border:5px solid #000000;
-}
-.acr:hover {
-    border:5px solid #f4ff55;
 }
 .cr3 {
     width:310px;
@@ -88,13 +84,11 @@ button, select {
 }
 .cr3:hover {
     background-color:#f4ff55;
+    border:5px solid #f4ff55;
 }
 .rcr {
     width: 300px;
     border:5px solid #000000;
-}
-.rcr:hover {
-    border:5px solid #f4ff55;
 }
 .cr4 {
     width:310px;
@@ -102,13 +96,11 @@ button, select {
 }
 .cr4:hover {
     background-color:#f4ff55;
+    border:5px solid #f4ff55;
 }
 .wcr {
     width: 300px;
     border:5px solid #000000;
-}
-.wcr:hover {
-    border:5px solid #f4ff55;
 }
 .cr5 {
     width:310px;
@@ -116,13 +108,11 @@ button, select {
 }
 .cr5:hover {
     background-color:#f4ff55;
+    border:5px solid #f4ff55;
 }
 .dcr {
     width: 300px;
     border:5px solid #000000;
-}
-.dcr:hover {
-    border:5px solid #f4ff55;
 }
 .cr6 {
     width:310px;
@@ -130,11 +120,36 @@ button, select {
 }
 .cr6:hover {
     background-color:#f4ff55;
+    border:5px solid #f4ff55;
 }
 .scr {
     width: 300px;
     border:5px solid #000000;
 }
-.scr:hover {
-    border:5px solid #f4ff55;
+.cd {
+    margin: auto;
+    font-size:x-large;
+    text-align:center;
+}
+.cart1 {
+    width: 200px;
+    margin: auto;
+    display:block;
+    border:2px solid #000000;
+}
+.remove {
+    font-size:small;
+}
+.line2{
+    background-color: black;
+    padding: 2px;
+    width: 800px;
+    margin: auto;
+}
+.checkout {
+    margin: auto;
+    text-align:center;
+}
+.total {
+    font-size:x-large;
 }
