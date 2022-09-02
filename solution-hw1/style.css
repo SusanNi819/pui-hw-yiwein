@@ -15,8 +15,25 @@ button, select {
     text-align:center;
     max-width: 200px;
     margin: 20px auto;
+    text-decoration:none;
+}
+.products:hover {
+    background-color:#f4ff55;
+    font:bold;
 }
 .cart{
+    text-align:center;
+    max-width: 140px;
+    margin: 20px auto;
+}
+.cart:hover {
+    background-color:#f4ff55;
+    font:bold;
+}
+.catch-line {
+    text-align:center;
+}
+.cart-name {
     text-align:center;
 }
 .line{
