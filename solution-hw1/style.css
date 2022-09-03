@@ -147,6 +147,18 @@ button, select {
     border:5px solid #000000;
 }
 /* styling for the cart page*/
+.co {
+    font-size:x-large;
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:2px solid #000000;
+}
+.co:hover {
+    background-color:#f4ff55;
+}
 .cd {
     margin: auto;
     font-size:x-large;
@@ -174,4 +186,18 @@ button, select {
 }
 .total {
     font-size:x-large;
+}
+.add-to-cart {
+    margin: auto;
+    margin-left: 10px;
+    font-size:x-large;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:2px solid #000000;
+}
+.add-to-cart:hover {
+    background-color:#f4ff55;
 }
