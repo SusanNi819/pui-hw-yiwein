@@ -1,0 +1,149 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+select {
+    font-size: 100%;
+}
+a {
+    text-decoration:none;
+    color:#000000;
+}
+.logo-image {
+    width: 400px;
+    margin: 50px 50px;
+}
+.menu-products{
+    text-align:center;
+    max-width: 200px;
+    margin: 20px auto;
+}
+.menu-products:hover {
+    background-color:#f4ff55;
+    font:bold;
+}
+.menu-cart{
+    text-align:center;
+    max-width: 140px;
+    margin: 20px auto;
+}
+.menu-cart:hover {
+    background-color:#f4ff55;
+    font:bold;
+}
+/* styling for the gallery page*/
+.catchline {
+    text-align:center;
+}
+.cart-name {
+    text-align:center;
+}
+.line{
+    background-color: black;
+    padding: 2px;
+}
+.details {
+    text-align:center;
+    max-width: 200px;
+    margin: 20px auto;
+}
+.cr1,
+.cr2,
+.cr3,
+.cr4,
+.cr5,
+.cr6 {
+    width:310px;
+    margin: auto;
+}
+.cinnamon-roll-images{
+    width: 300px;
+    border:5px solid #000000;
+}
+.cr1:hover {
+    background-color:#f4ff55;
+    border:5px solid #f4ff55;
+}
+.cr2:hover {
+    background-color:#f4ff55;
+    border:5px solid #f4ff55;
+}
+.cr3:hover {
+    background-color:#f4ff55;
+    border:5px solid #f4ff55;
+}
+.cr4:hover {
+    background-color:#f4ff55;
+    border:5px solid #f4ff55;
+}
+.cr5:hover {
+    background-color:#f4ff55;
+    border:5px solid #f4ff55;
+}
+.cr6:hover {
+    background-color:#f4ff55;
+    border:5px solid #f4ff55;
+}
+/* styling for the cart page*/
+.co {
+    font-size:x-large;
+    width: 300px;
+    padding: 5px 20px 5px 20px;
+    border:2px solid #000000;
+}
+.co:hover {
+    background-color:#f4ff55;
+}
+.cd {
+    margin: auto;
+    font-size:x-large;
+    text-align:center;
+}
+.cart1 {
+    width: 200px;
+    margin: auto;
+    display:block;
+    border:2px solid #000000;
+}
+.remove {
+    font-size:small;
+    text-decoration:underline;
+}
+.line2{
+    background-color: black;
+    padding: 2px;
+    width: 800px;
+    margin: auto;
+}
+.checkout {
+    margin: auto;
+    text-align:center;
+}
+.total {
+    font-size:x-large;
+}
+.add-to-cart {
+    margin: auto;
+    margin-left: 10px;
+    font-size:x-large;
+    width: 300px;
+    padding: 5px 15px 5px 15px;
+    border:2px solid #000000;
+}
+.add-to-cart:hover {
+    background-color:#f4ff55;
+}
+/* styling for the details page*/
+.rolls{
+    text-align:center;
+    font-size:x-large;
+}
+.roll1{
+    text-align:center;
+    width: 400px;
+    border: 5px solid rgb(0, 0, 0);
+}
+.original{
+    margin:auto;
+    font-size:x-large;
+    width: 300px;
+}
