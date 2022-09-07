@@ -14,10 +14,12 @@ a {
 header {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 header .header-right {
     display: flex;
     flex-direction: column;
+    flex: 1 1 70%;
     justify-content: space-between;
 }
 header .header-right .menu-choices {
@@ -29,8 +31,11 @@ header .header-right .menu-choices {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:flex-end;
+    align-items: right;
+    margin: 100px 50px 0 0;
+
+    text-align: right;
 }
 .line {
     background-color: black;
@@ -39,15 +44,13 @@ nav {
 p {
     font-size:larger;
 }
-.menu-choices {
-    display:flex;
+.menu-choices > a{
     font-size:x-large;
-    justify-content: flex-end;
 }
-.menu-choice:hover {
+.menu-choices > a:hover {
     background-color:#f4ff55;
     font:bold;
-    height: 30px;
+    height: 25px;
 }
 
 .menu {
