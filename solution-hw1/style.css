@@ -47,77 +47,43 @@ a {
     max-width: 200px;
     margin: 20px auto;
 }
-.cr1 {
+.cr1,
+.cr2,
+.cr3,
+.cr4,
+.cr5,
+.cr6 {
     width:310px;
     margin: auto;
 }
-.cr1:hover {
-    background-color:#f4ff55;
-    border:5px solid #f4ff55;
-}
-.ocr {
+.ocr,
+.acr,
+.rcr,
+.wcr,
+.dcr,
+.scr {
     width: 300px;
     border:5px solid #000000;
-}
-.cr2 {
-    width:310px;
-    margin: auto;
 }
 .cr2:hover {
     background-color:#f4ff55;
     border:5px solid #f4ff55;
 }
-.acr {
-    width: 300px;
-    border:5px solid #000000;
-}
-.cr3 {
-    width:310px;
-    margin: auto;
-}
 .cr3:hover {
     background-color:#f4ff55;
     border:5px solid #f4ff55;
-}
-.rcr {
-    width: 300px;
-    border:5px solid #000000;
-}
-.cr4 {
-    width:310px;
-    margin: auto;
 }
 .cr4:hover {
     background-color:#f4ff55;
     border:5px solid #f4ff55;
 }
-.wcr {
-    width: 300px;
-    border:5px solid #000000;
-}
-.cr5 {
-    width:310px;
-    margin: auto;
-}
 .cr5:hover {
     background-color:#f4ff55;
     border:5px solid #f4ff55;
 }
-.dcr {
-    width: 300px;
-    border:5px solid #000000;
-}
-.cr6 {
-    width:310px;
-    margin: auto;
-}
 .cr6:hover {
     background-color:#f4ff55;
     border:5px solid #f4ff55;
-}
-.scr {
-    width: 300px;
-    border:5px solid #000000;
 }
 /* styling for the cart page*/
 .co {
