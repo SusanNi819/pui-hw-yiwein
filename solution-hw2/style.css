@@ -8,6 +8,14 @@ a {
     text-decoration:none;
     color:#000000;
 }
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.menu {
+    display: flex;
+    margin: 20px;
+}
 .logo-image {
     width: 400px;
     margin: 50px 50px;
