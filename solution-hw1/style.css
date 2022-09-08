@@ -84,21 +84,22 @@ a {
     border:5px solid #f4ff55;
 }
 /* styling for the cart page*/
-.co {
+.span-button {
     font-size:x-large;
     width: 300px;
     padding: 5px 20px 5px 20px;
     border:2px solid #000000;
+    margin-left: 10px;
 }
-.co:hover {
+.span-button:hover {
     background-color:#f4ff55;
 }
-.cd {
+.your-cart {
     margin: auto;
     font-size:x-large;
     text-align:center;
 }
-.cart1 {
+.cart-items {
     width: 200px;
     margin: auto;
     display:block;
@@ -120,17 +121,6 @@ a {
 }
 .total {
     font-size:x-large;
-}
-.add-to-cart {
-    margin: auto;
-    margin-left: 10px;
-    font-size:x-large;
-    width: 300px;
-    padding: 5px 15px 5px 15px;
-    border:2px solid #000000;
-}
-.add-to-cart:hover {
-    background-color:#f4ff55;
 }
 /* styling for the details page*/
 .rolls{
