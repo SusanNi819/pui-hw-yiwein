@@ -270,10 +270,9 @@ p {
     width: 300px;
 }
 .add-to-cart {
-    margin: auto;
-    margin-left: 10px;
+    text-align:center;
     font-size:x-large;
-    width: 300px;
+    width: 180px;
     padding: 5px 15px 5px 15px;
     border:2px solid #000000;
 }
