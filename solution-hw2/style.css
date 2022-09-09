@@ -32,7 +32,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
-    align-items: right;
     margin: 100px 50px 0 0;
 
     text-align: right;
