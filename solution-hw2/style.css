@@ -203,6 +203,7 @@ p {
 .cinnamon-roll{
     text-align:center;
     border: 5px solid rgb(0, 0, 0);
+    width: 600px;
 }
 .product-info-middle {
     width: 300px;
