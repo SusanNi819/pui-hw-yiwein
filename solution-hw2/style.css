@@ -77,6 +77,8 @@ p {
 .cr6 {
     width:260px;
     margin: auto;
+    box-sizing: border-box;
+    border:5px solid #ffffff;
 }
 .cinnamon-roll-images{
     width: 250px;
@@ -184,8 +186,9 @@ p {
     justify-content:space-between;
     padding: 30px 70px 30px 90px;
 }
-.total {
-    font-size:x-large;
+.total,
+.number {
+    font-size:19.2px;
 }
 .add-to-cart:hover {
     background-color:#f4ff55;
@@ -207,6 +210,10 @@ p {
 }
 .product-info-middle {
     width: 300px;
+    padding: 15px 0;
+}
+.product-info-right {
+    padding: 40px 0;
 }
 .original{
     margin:auto;
