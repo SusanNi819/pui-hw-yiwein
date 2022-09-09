@@ -44,14 +44,6 @@ nav {
 p {
     font-size:larger;
 }
-.menu-choices > a{
-    font-size:x-large;
-}
-.menu-choices > a:hover {
-    background-color:#f4ff55;
-    font:bolder;
-    height: 25px;
-}
 .menu {
     display: flex;
     margin: 20px;
@@ -69,6 +61,24 @@ p {
     padding: 2px;
 }
 /* styling for the gallery page*/
+.menu-choices > .index-products {
+    font-size:x-large;
+    font-weight:bold;
+    background-color:#f4ff55;
+}
+.menu-choices > .index-products:hover {
+    background-color:#f4ff55;
+    font-weight:bold;
+    height: 25px;
+}
+.menu-choices > .index-cart {
+    font-size:x-large;
+}
+.menu-choices > .index-cart:hover {
+    background-color:#f4ff55;
+    font-weight:bold;
+    height: 25px;
+}
 .cr1,
 .cr2,
 .cr3,
@@ -119,6 +129,24 @@ p {
     align-content:flex-start;
   } 
 /* styling for the cart page*/
+.menu-choices > .cart-products{
+    font-size:x-large;
+}
+.menu-choices > .cart-products:hover {
+    background-color:#f4ff55;
+    font-weight:bold;
+    height: 25px;
+}
+.menu-choices > .cart-cart{
+    font-size:x-large;
+    font-weight:bold;
+    background-color:#f4ff55;
+}
+.menu-choices > .cart-cart:hover {
+    background-color:#f4ff55;
+    font-weight:bold;
+    height: 25px;
+}
 .button-to-the-right {
     display: flex;
     justify-content:flex-end;
@@ -194,6 +222,24 @@ p {
     background-color:#f4ff55;
 }
 /* styling for the details page*/
+.menu-choices > .details-products {
+    font-size:x-large;
+    font-weight:bold;
+    background-color:#f4ff55;
+}
+.menu-choices > .details-products:hover {
+    background-color:#f4ff55;
+    font-weight:bold;
+    height: 25px;
+}
+.menu-choices > .details-cart {
+    font-size:x-large;
+}
+.menu-choices > .details-cart:hover {
+    background-color:#f4ff55;
+    font-weight:bold;
+    height: 25px;
+}
 .details-main {
     display: flex;
     flex-direction: row;
