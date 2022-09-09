@@ -117,15 +117,18 @@ p {
     align-content:flex-start;
   } 
 /* styling for the cart page*/
-.co {
+.button-to-the-right {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 70px;
+}
+.final-click {
     font-size:x-large;
     width: 150px;
     padding: 5px 20px 5px 20px;
     border:2px solid #000000;
-    display: flex;
-    justify-content:end;
 }
-.co:hover {
+.final-click:hover {
     background-color:#f4ff55;
 }
 .cart-main {
@@ -157,7 +160,7 @@ p {
     justify-content:flex-end;
 }
 .product-image {
-    width: 120px;
+    width: 140px;
     margin: auto;
     display:block;
     border:2px solid #000000;
@@ -173,25 +176,16 @@ p {
 .line2{
     background-color: black;
     padding: 2px;
-    width: 800px;
-    margin: auto;
+    width: 700px;
 }
 .checkout {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 70px 30px 90px;
 }
 .total {
     font-size:x-large;
-}
-.add-to-cart {
-    margin: auto;
-    margin-left: 10px;
-    font-size:x-large;
-    width: 300px;
-    padding: 5px 15px 5px 15px;
-    border:2px solid #000000;
 }
 .add-to-cart:hover {
     background-color:#f4ff55;
@@ -204,15 +198,25 @@ p {
 }
 .cinnamon-roll-image {
     text-align:center;
+    margin-right: 50px;
 }
 .cinnamon-roll{
     text-align:center;
-    width: 600px;
     border: 5px solid rgb(0, 0, 0);
-    margin-right: 40px;
+}
+.product-info-middle {
+    width: 300px;
 }
 .original{
     margin:auto;
     font-size:x-large;
     width: 300px;
+}
+.add-to-cart {
+    margin: auto;
+    margin-left: 10px;
+    font-size:x-large;
+    width: 300px;
+    padding: 5px 15px 5px 15px;
+    border:2px solid #000000;
 }
