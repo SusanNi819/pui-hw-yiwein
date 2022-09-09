@@ -166,14 +166,19 @@ p {
     background-color:#f4ff55;
 }
 /* styling for the details page*/
-.rolls{
-    text-align:center;
-    font-size:x-large;
+.details-main {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
-.roll1{
+.cinnamon-roll-image {
     text-align:center;
-    width: 400px;
+}
+.cinnamon-roll{
+    text-align:center;
+    width: 600px;
     border: 5px solid rgb(0, 0, 0);
+    margin-right: 40px;
 }
 .original{
     margin:auto;
