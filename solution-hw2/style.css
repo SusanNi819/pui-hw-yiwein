@@ -49,7 +49,7 @@ p {
 }
 .menu-choices > a:hover {
     background-color:#f4ff55;
-    font:bold;
+    font:bolder;
     height: 25px;
 }
 .menu {
