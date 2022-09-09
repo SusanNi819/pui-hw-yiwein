@@ -184,6 +184,9 @@ p {
     flex-direction: row;
     justify-content:space-between;
 }
+.product-info-right {
+    margin-right: 70px;
+}
 .cart-top {
     display: flex;
     flex-direction: column;
