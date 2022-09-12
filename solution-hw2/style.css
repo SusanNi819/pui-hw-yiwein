@@ -52,8 +52,10 @@ p {
     width: 300px;
     margin: 50px 50px;
 }
-.catchline {
+.catchline > h2{
     text-align:left;
+    font-weight:300;
+    font-size:xx-large;
 }
 .line{
     background-color: black;
@@ -88,6 +90,7 @@ p {
     margin: auto;
     box-sizing: border-box;
     border:5px solid #ffffff;
+    text-decoration:underline;
 }
 .cinnamon-roll-images{
     width: 250px;
@@ -197,8 +200,8 @@ p {
     display:block;
     border:2px solid #000000;
 }
-.remove {
-    font-size:small;
+.cinnamon-rolls-footer {
+    font-size: 10px;
     text-decoration:underline;
 }
 .cart-bottom {
