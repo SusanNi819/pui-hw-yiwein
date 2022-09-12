@@ -4,9 +4,6 @@
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-select {
-    font-size: 100%;
-}
 a {
     text-decoration:none;
     color:#000000;
@@ -277,6 +274,9 @@ p {
     margin:auto;
     font-size:x-large;
     width: 300px;
+}
+select {
+    font-size: 100%;
 }
 .add {
     font-size:19.2px;
