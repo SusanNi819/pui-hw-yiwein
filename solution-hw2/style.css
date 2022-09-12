@@ -90,7 +90,6 @@ p {
     margin: auto;
     box-sizing: border-box;
     border:5px solid #ffffff;
-    text-decoration:underline;
 }
 .cinnamon-roll-images{
     width: 250px;
@@ -125,6 +124,14 @@ p {
     text-align:left;
     align-content: flex-start;
   }
+.product-name {
+    font-size: 19.2px;
+    text-decoration:underline;
+    margin-top: 10px;
+}
+.product-price {
+    font-size: 19.2px;
+}
   .items-for-sale-two {
     display: flex;
     text-align:left;
