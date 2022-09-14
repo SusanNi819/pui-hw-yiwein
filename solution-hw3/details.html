@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Gallery Page</title>
     <link rel="stylesheet" href="style.css"/>
+    <script defer src="js/calculation.js"></script>
   </head>
 
   <body>
@@ -52,7 +53,7 @@
             <p>
               Glazing:
             </p>
-            <select id="glazing">
+            <select id="glazing" onchange="glazing(this)">
               <option value="Keep original">Keep original</option>
               <option value="Sugar milk">Sugar milk</option>
               <option value="Vanilla milk">Vanilla milk</option>
@@ -71,9 +72,10 @@
         </div>
         <br><br>
         <div class="right-bottom">
-          <div class="add">
+          <div class="price">
             <p>
-              $2.75 </p>
+              $2.75 
+            </p>
           </div>
           <div class="add-to-cart">
             <a href="./cart.html">Add to Cart</a>
