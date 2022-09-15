@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Gallery Page</title>
     <link rel="stylesheet" href="style.css"/>
-    <script defer src="js/calculation.js"></script>
+    <script defer src="js/price.js"></script>
   </head>
 
   <body>
@@ -50,8 +50,7 @@
               Customize our delicious, hand-made cinammon roll to your liking!
             </p>
             <br>
-            <label for="glazing">Glazing:</label>
-            <select id="glazing" onchange="glazing(this)">
+            <select id="glazing" onchange="glazingChange(this)">
               <option value="Keep original">Keep original</option>
               <option value="Sugar milk">Sugar milk</option>
               <option value="Vanilla milk">Vanilla milk</option>
@@ -60,7 +59,7 @@
             <p>
               Pack size:
             </p>
-            <select id="pack-size">
+            <select id="pack-size" onchange="glazingChange(this)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
