@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Gallery Page</title>
     <link rel="stylesheet" href="style.css"/>
-    <script defer src="js/price.js"></script>
   </head>
 
   <body>
@@ -59,7 +58,7 @@
             <p>
               Pack size:
             </p>
-            <select id="pack-size" onchange="glazingChange(this)">
+            <select id="pack-size" onchange="packChange(this)">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -71,7 +70,12 @@
         <div class="right-bottom">
           <div class="price">
             <p>
-              $2.75 
+              $ 
+            </p>
+          </div>
+          <div class="update-price">
+            <p>
+              2.49
             </p>
           </div>
           <div class="add-to-cart">
@@ -82,5 +86,5 @@
       </div>
     </div>
   </body>
-  
+  <script defer src="js/price.js"></script>
 </html>

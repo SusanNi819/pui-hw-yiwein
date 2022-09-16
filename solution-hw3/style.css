@@ -280,7 +280,11 @@ select {
 }
 .price {
     font-size:19.2px;
+}
+.update-price {
+    font-size:19.2px;
     margin-right: 40px;
+    margin-left: 10px;
 }
 .add-to-cart {
     text-align:center;
