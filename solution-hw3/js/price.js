@@ -1,6 +1,8 @@
-let basePrice = 2.75;
+let basePrice = 2.49;
 let glazingPrice = [0, 0, 0.5, 1.5];
-packPrice = [1, 3, 5, 10];
+let packPrice = [1, 3, 5, 10];
+let glazing = document.querySelector(".glazing");
+let packSize = document.querySelector(".pack-size");
 
 function glazingChange(element) {
   glazingPrice.glazingChange = d;
