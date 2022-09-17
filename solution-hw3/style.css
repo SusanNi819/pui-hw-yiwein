@@ -278,13 +278,11 @@ p {
 select {
     font-size: 100%;
 }
-.price {
-    font-size:19.2px;
-}
 .update-price {
+    display: flex;
     font-size:19.2px;
     margin-right: 40px;
-    margin-left: 10px;
+    padding-top: 25px;
 }
 .add-to-cart {
     text-align:center;
