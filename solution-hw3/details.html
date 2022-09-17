@@ -49,7 +49,7 @@
               Customize our delicious, hand-made cinammon roll to your liking!
             </p>
             <br>
-            <select id="glazing" onchange="glazingChange(this)">
+            <select id="glazing">
               <option value="Keep original">Keep original</option>
               <option value="Sugar milk">Sugar milk</option>
               <option value="Vanilla milk">Vanilla milk</option>
@@ -58,7 +58,7 @@
             <p>
               Pack size:
             </p>
-            <select id="pack-size" onchange="packChange(this)">
+            <select id="pack-size">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -73,9 +73,9 @@
               $ 
             </p>
           </div>
-          <div class="update-price">
+          <div class="update-price" onchange="updatedPrice(this)">
             <p>
-              2.49
+            $ 2.49
             </p>
           </div>
           <div class="add-to-cart">
