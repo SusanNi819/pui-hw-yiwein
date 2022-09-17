@@ -20,7 +20,6 @@ function glazingChange(element) {
 
 function packChange(element) {
   let element2 = document.querySelector(".pack-size");
-  // get value of selected glazing option
   const packPriceChange = element.pack-size;
   if (packPriceChange == 1) {
     updatePrice = updatePrice * packPrice[0];
@@ -31,7 +30,7 @@ function packChange(element) {
   } else if (packPriceChange == 12) {
     updatePrice = updatePrice * packPrice[3];
   }
+  element.innerHTML = "$ " + updatePrice;
 }
-function updatedPrice(element) {
-  let element3 = document.querySelector('.update-price');
-}
+document.querySelector(".updatedPrice").addEventListener('onChange', glazingChange)
+document.querySelector(".updatedPrice").addEventListener('onChange', packChange)
