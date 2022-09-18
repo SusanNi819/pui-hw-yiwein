@@ -279,10 +279,9 @@ select {
     font-size: 100%;
 }
 .update-price {
-    display: flex;
-    font-size:19.2px;
+    margin-top: 25px;
+    font-size: 24px;
     margin-right: 40px;
-    padding-top: 25px;
 }
 .add-to-cart {
     text-align:center;
