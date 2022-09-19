@@ -9,7 +9,7 @@ let packPriceChange = 1;
 document.getElementById("glazing").addEventListener('change', glazingChange);
 
 let baseP = 2.49;
-let glazingP = 1;
+let glazingP = 0;
 let packP = 1;
 
 function updateP() {
