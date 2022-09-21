@@ -1,11 +1,12 @@
 let glazingPrice = [0, 0, 0.5, 1.5];
 let packPrice = [1, 3, 5, 10];
-let basePrice = 2.49;
+let basePrice = [2.49, 3.49, 2.99, 3.49, 3.99, 3.99];
+let baseUpdate = 2.49;
 let glazingUpdate = 0;
 let packUpdate = 1;
 
 function updatePrice() {
-  return (basePrice + glazingUpdate) * packUpdate;
+  return (baseUpdate + glazingUpdate) * packUpdate;
 }
 
 document.getElementById("glazing").addEventListener('change', glazingChange);

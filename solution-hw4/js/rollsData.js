@@ -1,26 +1,40 @@
 const rolls = {
     "Original": {
         "basePrice": 2.49,
-        "imageFile": "original-cinnamon-roll.jpg"
+        "imageFile": "Assets/original-cinnamon-roll.jpeg"
     },
     "Apple": {
         "basePrice": 3.49,
-        "imageFile": "apple-cinnamon-roll.jpg"
+        "imageFile": "Assets/apple-cinnamon-roll.jpeg"
     },
     "Raisin": {
         "basePrice": 2.99,
-        "imageFile": "raisin-cinnamon-roll.jpg"
+        "imageFile": "Assets/raisin-cinnamon-roll.jpeg"
     },
     "Walnut": {
         "basePrice": 3.49,
-        "imageFile": "walnut-cinnamon-roll.jpg"
+        "imageFile": "Assets/walnut-cinnamon-roll.jpeg"
     },
     "Double-Chocolate": {
         "basePrice": 3.99,
-        "imageFile": "double-chocolate-cinnamon-roll.jpg"
+        "imageFile": "Assets/double-chocolate-cinnamon-roll.jpeg"
     },
     "Strawberry": {
         "basePrice": 3.99,
-        "imageFile": "strawberry-cinnamon-roll.jpg"
+        "imageFile": "Assets/strawberry-cinnamon-roll.jpeg"
     }    
 };
+
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const choseRoll = params.get('rolls');
+console.log(choseRoll);
+
+function updatePrice() {
+    return (basePrice + glazingUpdate) * packUpdate;
+  };
+
+function updateName() {
+    
+}
+
