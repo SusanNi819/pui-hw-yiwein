@@ -1,3 +1,4 @@
+
 let glazingPrice = [0, 0, 0.5, 1.5];
 let packPrice = [1, 3, 5, 10];
 let basePrice = 2.49;
@@ -7,19 +8,19 @@ let packUpdate = 1;
 let allGlazing = [
   {
     name: "Keep original",
-    value: 2.49,
+    value: 0,
   },
   {
     name: "Sugar milk",
-    value: 2.49,
+    value: 0,
   },
   {
     name: "Vanilla milk",
-    value: 2.99,
+    value: 0.5,
   },
   {
     name: "Double chocolate",
-    value: 3.99,
+    value: 1.5,
   },
 ];
 
@@ -60,19 +61,23 @@ function updatePrice() {
   return (basePrice + glazingUpdate) * packUpdate;
 }
 
+
+
 document.getElementById("glazing").addEventListener('change', glazingChange);
 function glazingChange(element) {
   let element1 = document.getElementById("glazing");
   priceChange = element1.value;
   if (priceChange == allGlazing[0].value) {
-    glazingUpdate = glazingPrice[0];
+    glazingUpdate = allGlazing[0].value;
   } else if (priceChange == allGlazing[1].value) {
-    glazingUpdate = glazingPrice[1];
+    glazingUpdate = allGlazing[1].value;
   } else if (priceChange == allGlazing[2].value) {
-    glazingUpdate = glazingPrice[2];
+    glazingUpdate = allGlazing[2].value;
   } else if (priceChange == allGlazing[3].value) {
-    glazingUpdate = glazingPrice[3];
+    glazingUpdate = allGlazing[3].value;
   }
+  console.log(glazingUpdate);
+  basePrice = rollPrices;
   const newPrice = updatePrice()
   document.getElementById("updatedPrice").innerHTML = '$ ' + Math.round(newPrice*100)/100;
  }
@@ -90,6 +95,7 @@ function packChange(element) {
   } else if (packPriceChange == allPackSize[3].value) {
     packUpdate = packPrice[3];
   } 
+  basePrice = rollPrices;
   const newPrice = updatePrice()
   document.getElementById("updatedPrice").innerHTML = '$ ' + Math.round(newPrice*100)/100;
 }
