@@ -1,11 +1,6 @@
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const choseRoll = params.get('rolls');
-console.log(choseRoll);
-console.log(queryString);
-console.log(params);
-console.log(rolls);
-console.log(rolls[choseRoll]);
 const rollChoseName = rolls[choseRoll];
 
 
