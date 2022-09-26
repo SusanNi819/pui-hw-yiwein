@@ -61,8 +61,6 @@ function updatePrice() {
   return (basePrice + glazingUpdate) * packUpdate;
 }
 
-
-
 document.getElementById("glazing").addEventListener('change', glazingChange);
 function glazingChange(element) {
   let element1 = document.getElementById("glazing");
