@@ -297,6 +297,5 @@ select {
     flex-direction: row;
 }
 .catchline {
-    font-size:28.8px;
-    font-weight:bold;
+    font-size:32px;
 }
