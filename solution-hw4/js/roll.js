@@ -3,7 +3,6 @@ const params = new URLSearchParams(queryString);
 const choseRoll = params.get('rolls');
 const rollChoseName = rolls[choseRoll];
 
-
 const rollNames = rollChoseName.rollName;
 const rollNameElement = document.querySelector('#catchline');
 rollNameElement.innerText = rollNames;

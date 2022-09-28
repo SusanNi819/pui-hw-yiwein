@@ -6,10 +6,10 @@ constructor(rollType, rollGlazing, packSize, basePrice) {
     this.basePrice = basePrice;
 }
 }
+
 function addToCart() {
     let cart = new Roll (rollNames, rollGlazingType, packSizeType, rollPrices);
     console.log(cart);
 }
-
 document.querySelector('.add-to-cart').addEventListener('click', addToCart)
 
