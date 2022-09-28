@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/price.js"></script>
+    <script defer src="js/rollsData.js"></script>
+    <script defer src="js/roll.js"></script>
+    <script defer src="js/cart.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="./index.html">
+          <img src="Assets/logo-01.svg" class="logo-image" alt="Logo Image">
+        </a>
+      </div>
+      <div class="header-right">
+        <nav>
+          <div class="menu-choices">
+            <div class="details-products">
+              <a href="index.html">PRODUCTS</a>
+            </div>
+            <div class="details-cart">
+              <a href="./cart.html">CART</a>
+            </div>
+          </div>
+        </nav>
+        <div class="line"></div>
+        <div class="catchline" id="catchline">
+          <h2>
+            Original cinnamon roll
+          </h2>
+        </div>
+      </div>
+    </header>
+    
+    <br><br>
+    <div class="details-main">
+      <div class="details-left">
+        <div class="cinnamon-roll-image">
+          <a href="./details.html">
+            <img src="Assets/original-cinnamon-roll.jpeg" class="cinnamon-roll" id="cinnamon-roll-image" alt="Original Cinnamon Roll"></a>
+        </div>
+      </div>
+      <div class="details-right">
+        <div class="right-top">
+          <div class="original">
+            <p>
+              Customize our delicious, hand-made cinammon roll to your liking!
+            </p>
+            <br>
+            <p>
+              Glazing:
+            </p>
+            <select id="glazing">
+            </select>
+            <p>
+              Pack size:
+            </p>
+            <select id="pack-size">
+            </select>
+          </div>
+        </div>
+        <br><br>
+        <div class="right-bottom">
+          <div class="update-price" id="updatedPrice" onchange="updatedPrice(this)">
+            $ 2.49
+          </div>
+          <div class="add-to-cart">
+            <a>Add to Cart</a>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </body>
+</html>
