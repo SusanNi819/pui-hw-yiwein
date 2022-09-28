@@ -7,7 +7,7 @@ constructor(rollType, rollGlazing, packSize, basePrice) {
 }
 }
 function addToCart() {
-    let cart = new Roll (rollNames, glazingUpdate, packUpdate, rollPrices);
+    let cart = new Roll (rollNames, rollGlazingType, packSizeType, rollPrices);
     console.log(cart);
 }
 
