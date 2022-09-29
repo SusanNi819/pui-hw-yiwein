@@ -8,7 +8,7 @@ constructor(rollType, rollGlazing, packSize, basePrice) {
 }
 
 function addToCart() {
-    let cart = new Roll (rollNames, rollGlazingType, packSizeType, rollPrices);
+    let cart = new Roll (rollKey, rollGlazingType, packSizeType, rollPrices);
     console.log(cart);
 }
 document.querySelector('.add-to-cart').addEventListener('click', addToCart)

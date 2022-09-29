@@ -4,7 +4,7 @@ let packPrice = [1, 3, 5, 10];
 let basePrice = 2.49;
 let glazingUpdate = 0;
 let packUpdate = 1;
-let rollGlazingType = "";
+let rollGlazingType = "Keep Original";
 let packSizeType = 1;
 
 let allGlazing = [

@@ -15,5 +15,7 @@ const rollImages = rollChoseName.imageFile;
 const rollImageElement = document.querySelector('#cinnamon-roll-image');
 rollImageElement.src = rollImages;
 
+const rollKey = rollChoseName.rollKeyName;
+
 
 
