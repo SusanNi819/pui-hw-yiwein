@@ -3,9 +3,9 @@ const params = new URLSearchParams(queryString);
 const choseRoll = params.get('rolls');
 const rollChoseName = rolls[choseRoll];
 
-const rollNames = rollChoseName.rollName;
+const rollNames = rollChoseName.rollKeyName;
 const rollNameElement = document.querySelector('#catchline');
-rollNameElement.innerText = rollNames;
+rollNameElement.innerText = rollNames + " Cinnamon Roll";
 
 const rollPrices = rollChoseName.basePrice;
 const rollPriceElement = document.querySelector('#updatedPrice');
