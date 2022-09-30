@@ -1,10 +1,11 @@
 class Roll {
-constructor(rollImage, rollType, rollGlazing, packSize, basePrice) {
+constructor(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPrice) {
   this.Image = rollImage;  
   this.type = rollType;
     this.glazing = rollGlazing;
     this.size = packSize;
     this.basePrice = basePrice;
+    this.calculatedPrice = calculatedPrice;
 
     this.element = null;
 }
@@ -12,8 +13,8 @@ constructor(rollImage, rollType, rollGlazing, packSize, basePrice) {
 
 const itemSet = new Set();
 
-function addToCart(rollImage, rollType, rollGlazing, packSize, basePrice) {
-    const cartItem = new Roll (rollImage, rollType, rollGlazing, packSize, basePrice);
+function addToCart(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPrice) {
+    const cartItem = new Roll (rollImage, rollType, rollGlazing, packSize, basePrice,calculatedPrice);
     itemSet.add(cartItem);
 
     return cartItem;
@@ -23,10 +24,8 @@ function createElement(cartItem) {
   const template = document.querySelector('#cartItem-template');
   const clone = template.content.cloneNode(true);
   cartItem.element = clone.querySelector('.cartItem');
-
-  const btnDelete = document.querySelector('.cinnamon-rolls-footer');
-  console.log(btnDelete);
-  document.getElementByClass("cinnamon-rolls-footer").addEventListener('click', () => {
+  const btnDelete = cartItem.element.querySelector('.cinnamon-rolls-footer');
+  btnDelete.addEventListener('click', () => {
     deleteItem(cartItem);
 });
   const cartItemListElement = document.querySelector('.cart-top');
@@ -38,15 +37,17 @@ function createElement(cartItem) {
 
 
   function updateElement(cartItem) {
-    const rollImageElement = cartItem.element.querySelector('.product-image');
+    const rollImageElement = cartItem.element.querySelector('.product-info-left');
     const rollNameElement = cartItem.element.querySelector('.roll-name');
     const rollGlazingElement = cartItem.element.querySelector('.roll-glazing');
-    const rollSizeElement = cartItem.element.querySelector('.roll-size')
+    const rollSizeElement = cartItem.element.querySelector('.roll-size');
+    const rollPriceElement = cartItem.element.querySelector('.product-info-right')
   
     rollImageElement.src = cartItem.rollImage;
-    rollNameElement.innerText = cartItem.rollType;
+    rollNameElement.innerText = cartItem.rollType + "Cinnamon Roll";
     rollGlazingElement.innerText = "Glazing: " + cartItem.rollGlazing;
     rollSizeElement.innerText = "Pack Size: " + cartItem.packSize;
+    rollPriceElement.innerText = "$ " + cartItem.calculatedPrice;
   }
 
   function deleteItem(cartItem) {
@@ -55,10 +56,12 @@ function createElement(cartItem) {
   }
 
   const cartItemOne = addToCart(
+    "Assets/.original-cinnamon-roll.jpeg",
     "Original",
     "Sugar Milk",
     1,
-    5
+    2.49,
+    0
   );
 
 const cartItemTwo = addToCart(
@@ -66,7 +69,8 @@ const cartItemTwo = addToCart(
     "Walnut",
     "Vanilla Milk",
     12,
-    1
+    3.49,
+    0
   );
 
 const cartItemThree = addToCart(
@@ -74,7 +78,8 @@ const cartItemThree = addToCart(
     "Raisin",
     "Sugar Milk",
     3,
-    2
+    2.99,
+    0
   );
 
 const cartItemFour = addToCart(
@@ -82,7 +87,8 @@ const cartItemFour = addToCart(
     "Apple",
     "Original",
     3,
-    23
+    3.49,
+    0
   );
 
   for (const cartItem of itemSet) {

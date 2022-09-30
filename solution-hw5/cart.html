@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <title>Gallery Page</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="js/price.js"></script>
-    <script defer src="js/rollsData.js"></script>
-    <script defer src="js/roll.js"></script>
     <script defer src="js/cart.js"></script>
   </head>
 
@@ -44,36 +41,38 @@
         <div class="cart-top">
 
           <template id="cartItem-template">
+            <div class="cartItem expanded">
+              <div class="cinnamon-rolls-top">
+                <div class="product-info">
+                  <div class="product-info-left">
+                    <img src="Assets/original-cinnamon-roll.jpeg" class="product-image" alt="Original Cinnamon Roll">
+                  </div>
+                  <div class="product-info-middle">
+                      <div class="roll-name">
+                        Original Cinnamon Roll
+                      </div>
+                      <br>
+                      <div class="roll-glazing">
+                        Glazing: Keep original
+                      </div>
+                      <br>
+                      <div class="roll-size">
+                        Pack Size: 1
+                      </div>
+                      
+                    </p>
+                  </div>
+                  <div class="product-info-right">
+                    <p>
+                      $ 2.49
+                    </p>
+                  </div>
+                </div>
+                <div class="cinnamon-rolls-footer">
+                  <p>Remove</p>
+                </div>
+              </div>
 
-            <div class="cinnamon-rolls-top">
-              <div class="product-info">
-                <div class="product-info-left">
-                  <img src="Assets/original-cinnamon-roll.jpeg" class="product-image" alt="Original Cinnamon Roll">
-                </div>
-                <div class="product-info-middle">
-                    <div class="roll-name">
-                      Original Cinnamon Roll
-                    </div>
-                    <br>
-                    <div class="roll-glazing">
-                      Glazing: Keep original
-                    </div>
-                    <br>
-                    <div class="roll-size">
-                      Pack Size: 1
-                    </div>
-                    
-                  </p>
-                </div>
-                <div class="product-info-right">
-                  <p>
-                    $ 2.49
-                  </p>
-                </div>
-              </div>
-              <div class="cinnamon-rolls-footer">
-                <p>Remove</p>
-              </div>
             </div>
             
           </template>
