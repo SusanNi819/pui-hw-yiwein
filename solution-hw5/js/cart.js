@@ -26,8 +26,8 @@ function createElement(cartItem) {
 
   const btnDelete = document.querySelector('.cinnamon-rolls-footer');
   console.log(btnDelete);
-  document.getElementByClass("cinnamon-rolls-footer").addEventListener('click',
-    deleteItem(cartItem));
+  document.getElementByClass("cinnamon-rolls-footer").addEventListener('click', () => {
+    deleteItem(cartItem);
 });
   const cartItemListElement = document.querySelector('.cart-top');
   cartItemListElement.prepend(cartItem.element);
