@@ -24,22 +24,18 @@ function createElement(cartItem) {
   const clone = template.content.cloneNode(true);
   cartItem.element = clone.querySelector('.cartItem');
 
-  const btnDelete = cartItem.element.querySelector('.icon-delete');
+  const btnDelete = document.querySelector('.cinnamon-rolls-footer');
   console.log(btnDelete);
-  btnDelete.addEventListener('click', () => {
-    deleteItem(cartItem);
+  document.getElementByClass("cinnamon-rolls-footer").addEventListener('click',
+    deleteItem(cartItem));
 });
-}
-
-const cartItemListElement = document.querySelector('.cart-top');
+  const cartItemListElement = document.querySelector('.cart-top');
   cartItemListElement.prepend(cartItem.element);
 
-const cartItemOne = addToCart(
-    "Original",
-    "Sugar Milk",
-    1,
-    newPrice
-  );
+  updateElement(cartItem);
+}
+
+
 
   function updateElement(cartItem) {
     const rollImageElement = cartItem.element.querySelector('.product-image');
@@ -58,12 +54,19 @@ const cartItemOne = addToCart(
     itemSet.delete(cartItem);
   }
 
+  const cartItemOne = addToCart(
+    "Original",
+    "Sugar Milk",
+    1,
+    5
+  );
+
 const cartItemTwo = addToCart(
     "Assets/.walnut-cinnamon-roll.jpeg",
     "Walnut",
     "Vanilla Milk",
     12,
-    newPrice
+    1
   );
 
 const cartItemThree = addToCart(
@@ -71,7 +74,7 @@ const cartItemThree = addToCart(
     "Raisin",
     "Sugar Milk",
     3,
-    newPrice
+    2
   );
 
 const cartItemFour = addToCart(
@@ -79,10 +82,10 @@ const cartItemFour = addToCart(
     "Apple",
     "Original",
     3,
-    newPrice
+    23
   );
 
-  for (const cartItem of cartItemSet) {
+  for (const cartItem of itemSet) {
     console.log(cartItem);
     createElement(cartItem);
   }
