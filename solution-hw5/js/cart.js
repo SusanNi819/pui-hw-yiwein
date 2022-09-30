@@ -1,6 +1,6 @@
 class Roll {
 constructor(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPrice) {
-  this.Image = rollImage;  
+  this.image = rollImage;  
   this.type = rollType;
     this.glazing = rollGlazing;
     this.size = packSize;
@@ -37,16 +37,16 @@ function createElement(cartItem) {
 
 
   function updateElement(cartItem) {
-    const rollImageElement = cartItem.element.querySelector('.product-info-left');
+    const rollImageElement = cartItem.element.querySelector('.product-image');
     const rollNameElement = cartItem.element.querySelector('.roll-name');
     const rollGlazingElement = cartItem.element.querySelector('.roll-glazing');
     const rollSizeElement = cartItem.element.querySelector('.roll-size');
     const rollPriceElement = cartItem.element.querySelector('.product-info-right')
   
-    rollImageElement.src = cartItem.rollImage;
-    rollNameElement.innerText = cartItem.rollType + "Cinnamon Roll";
-    rollGlazingElement.innerText = "Glazing: " + cartItem.rollGlazing;
-    rollSizeElement.innerText = "Pack Size: " + cartItem.packSize;
+    rollImageElement.src = cartItem.image;
+    rollNameElement.innerText = cartItem.type + " Cinnamon Roll";
+    rollGlazingElement.innerText = "Glazing: " + cartItem.glazing;
+    rollSizeElement.innerText = "Pack Size: " + cartItem.size;
     rollPriceElement.innerText = "$ " + cartItem.calculatedPrice;
   }
 
@@ -56,7 +56,7 @@ function createElement(cartItem) {
   }
 
   const cartItemOne = addToCart(
-    "Assets/.original-cinnamon-roll.jpeg",
+    "Assets/original-cinnamon-roll.jpeg",
     "Original",
     "Sugar Milk",
     1,
@@ -65,7 +65,7 @@ function createElement(cartItem) {
   );
 
 const cartItemTwo = addToCart(
-    "Assets/.walnut-cinnamon-roll.jpeg",
+    "Assets/walnut-cinnamon-roll.jpeg",
     "Walnut",
     "Vanilla Milk",
     12,
@@ -74,7 +74,7 @@ const cartItemTwo = addToCart(
   );
 
 const cartItemThree = addToCart(
-    "Assets/.raisin-cinnamon-roll.jpeg",
+    "Assets/raisin-cinnamon-roll.jpeg",
     "Raisin",
     "Sugar Milk",
     3,
@@ -83,7 +83,7 @@ const cartItemThree = addToCart(
   );
 
 const cartItemFour = addToCart(
-    "Assets/.apple-cinnamon-roll.jpeg",
+    "Assets/apple-cinnamon-roll.jpeg",
     "Apple",
     "Original",
     3,
