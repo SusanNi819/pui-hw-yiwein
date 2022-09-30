@@ -42,51 +42,42 @@
     <div class="cart-main">
       <div class="cart-right">
         <div class="cart-top">
-          <div class="cinnamon-rolls-top">
-            <div class="product-info">
-              <div class="product-info-left">
-                <img src="Assets/original-cinnamon-roll.jpeg" class="product-image" alt="Original Cinnamon Roll">
-              </div>
-              <div class="product-info-middle">
+
+          <template id="cartItem-template">
+
+            <div class="cinnamon-rolls-top">
+              <div class="product-info">
+                <div class="product-info-left">
+                  <img src="Assets/original-cinnamon-roll.jpeg" class="product-image" alt="Original Cinnamon Roll">
+                </div>
+                <div class="product-info-middle">
+                    <div class="roll-name">
+                      Original Cinnamon Roll
+                    </div>
+                    <br>
+                    <div class="roll-glazing">
+                      Glazing: Keep original
+                    </div>
+                    <br>
+                    <div class="roll-size">
+                      Pack Size: 1
+                    </div>
+                    
+                  </p>
+                </div>
+                <div class="product-info-right">
                   <p>
-                  Original Cinnamon Roll <br>
-                  Glazing: Keep original <br>
-                  Pack Size: 1
-                </p>
+                    $ 2.49
+                  </p>
+                </div>
               </div>
-              <div class="product-info-right">
-                <p>
-                  $ 2.49
-                </p>
+              <div class="cinnamon-rolls-footer">
+                <p>Remove</p>
               </div>
             </div>
-            <div class="cinnamon-rolls-footer">
-              <p>Remove</p>
-            </div>
-          </div>
-          <div class="cinnamon-rolls-top">
-            <div class="product-info">
-              <div class="product-info-left">
-                <img src="Assets/double-chocolate-cinnamon-roll.jpeg" class="product-image" alt="Double Chocolate Cinnamon Roll">
-              </div>
-              <div class="product-info-middle">
-                <p>
-                  Double Chocolate Cinnamon Roll <br>
-                  Glazing: Sugar milk <br>
-                  Pack Size: 6
-                </p>
-              </div>
-              <div class="product-info-right">
-                <p>
-                  $ 27.45
-                </p>
-              </div>
-            </div>
-            <div class="cinnamon-rolls-footer">
-              <p>Remove</p>
-            </div>
-          </div>
-        </div>
+            
+          </template>
+
         <div class="cart-bottom">
           <div class="line2"></div>
           <div class="checkout">
