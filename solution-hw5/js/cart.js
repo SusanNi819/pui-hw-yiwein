@@ -138,6 +138,16 @@ function addToCart(rollImage, rollType, rollGlazing, packSize, basePrice, calcul
     return cartItem;
 }
 
+function calculateCartTotal () {
+  let totalValue = 0
+  for (const cartItem of itemSet) {
+    totalValue = totalValue + cartItem.calculatedPrice;
+  }
+  const updatedPrice = document.querySelector('#number');
+  updatedPrice.innerText = "$ " + totalValue.toFixed(2);
+  
+}
+
 function createElement(cartItem) {
   const template = document.querySelector('#cartItem-template');
   const clone = template.content.cloneNode(true);
@@ -145,79 +155,72 @@ function createElement(cartItem) {
   const btnDelete = cartItem.element.querySelector('.cinnamon-rolls-footer');
   btnDelete.addEventListener('click', () => {
     deleteItem(cartItem);
-});
-btnDelete.addEventListener('click', () => {
-  CalculateCartTotal ()
-});
+  });
+  btnDelete.addEventListener('click', () => {
+    calculateCartTotal()
+  });
   const cartItemListElement = document.querySelector('.cart-top');
   cartItemListElement.prepend(cartItem.element);
 
   updateElement(cartItem);
 }
 
-  function updateElement(cartItem) {
-    const rollImageElement = cartItem.element.querySelector('.product-image');
-    const rollNameElement = cartItem.element.querySelector('.roll-name');
-    const rollGlazingElement = cartItem.element.querySelector('.roll-glazing');
-    const rollSizeElement = cartItem.element.querySelector('.roll-size');
-    const rollPriceElement = cartItem.element.querySelector('.product-info-right')
-  
-    rollImageElement.src = cartItem.image;
-    rollNameElement.innerText = cartItem.type + " Cinnamon Roll";
-    rollGlazingElement.innerText = "Glazing: " + cartItem.glazing;
-    rollSizeElement.innerText = "Pack Size: " + cartItem.size;
-    rollPriceElement.innerText = "$ " + cartItem.calculatedPrice;
-  }
+function updateElement(cartItem) {
+  const rollImageElement = cartItem.element.querySelector('.product-image');
+  const rollNameElement = cartItem.element.querySelector('.roll-name');
+  const rollGlazingElement = cartItem.element.querySelector('.roll-glazing');
+  const rollSizeElement = cartItem.element.querySelector('.roll-size');
+  const rollPriceElement = cartItem.element.querySelector('.product-info-right')
 
-  function deleteItem(cartItem) {
-    cartItem.element.remove();
-    itemSet.delete(cartItem);
-  }
+  rollImageElement.src = cartItem.image;
+  rollNameElement.innerText = cartItem.type + " Cinnamon Roll";
+  rollGlazingElement.innerText = "Glazing: " + cartItem.glazing;
+  rollSizeElement.innerText = "Pack Size: " + cartItem.size;
+  rollPriceElement.innerText = "$ " + cartItem.calculatedPrice.toFixed(2);
+}
 
-  const cartItemOne = addToCart(
-    "Assets/apple-cinnamon-roll.jpeg",
-    "Apple",
-    "Original",
-    3,
-    3.49,
-    updateCalculatedPrice(baseChange("Apple"), glazeChange("Original"), packChange("3")).toFixed(2)
-  );
+function deleteItem(cartItem) {
+  cartItem.element.remove();
+  itemSet.delete(cartItem);
+}
 
-  const cartItemTwo = addToCart(
-    "Assets/raisin-cinnamon-roll.jpeg",
-    "Raisin",
-    "Sugar Milk",
-    3,
-    2.99,
-    updateCalculatedPrice(baseChange("Raisin"), glazeChange("Sugar Milk"), packChange("3")).toFixed(2)
-  );
+const cartItemOne = addToCart(
+  "Assets/apple-cinnamon-roll.jpeg",
+  "Apple",
+  "Original",
+  3,
+  3.49,
+  updateCalculatedPrice(baseChange("Apple"), glazeChange("Original"), packChange("3"))
+);
 
-  const cartItemThree = addToCart(
-    "Assets/walnut-cinnamon-roll.jpeg",
-    "Walnut",
-    "Vanilla Milk",
-    12,
-    3.49,
-    updateCalculatedPrice(baseChange("Walnut"), glazeChange("Vanilla Milk"), packChange("12")).toFixed(2)
-  );
+const cartItemTwo = addToCart(
+  "Assets/raisin-cinnamon-roll.jpeg",
+  "Raisin",
+  "Sugar Milk",
+  3,
+  2.99,
+  updateCalculatedPrice(baseChange("Raisin"), glazeChange("Sugar Milk"), packChange("3"))
+);
 
-  const cartItemFour = addToCart(
-    "Assets/original-cinnamon-roll.jpeg",
-    "Original",
-    "Sugar Milk",
-    1,
-    2.49,
-    updateCalculatedPrice(baseChange("Original"), glazeChange("Sugar Milk"), packChange("1")).toFixed(2)
-  );
+const cartItemThree = addToCart(
+  "Assets/walnut-cinnamon-roll.jpeg",
+  "Walnut",
+  "Vanilla Milk",
+  12,
+  3.49,
+  updateCalculatedPrice(baseChange("Walnut"), glazeChange("Vanilla Milk"), packChange("12"))
+);
 
-  for (const cartItem of itemSet) {
-    console.log(cartItem);
-    createElement(cartItem);
-  }
+const cartItemFour = addToCart(
+  "Assets/original-cinnamon-roll.jpeg",
+  "Original",
+  "Sugar Milk",
+  1,
+  2.49,
+  updateCalculatedPrice(baseChange("Original"), glazeChange("Sugar Milk"), packChange("1"))
+);
 
-  function CalculateCartTotal () {
-    let updatedCartTotal = 61.82 - updateCalculatedPrice(cartItem);
-    const updatedPrice = document.querySelector('#number');
-    updatedPrice.innerText = "$ " + updatedCartTotal;
-    console.log(updatedCartTotal);
-  }
+for (const cartItem of itemSet) {
+  console.log(cartItem);
+  createElement(cartItem);
+}
