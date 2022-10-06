@@ -1,4 +1,4 @@
-let rollNames = [
+let rollName = [
   {
     name: "Original",
     value: 2.49
@@ -70,18 +70,18 @@ function updateCalculatedPrice(baseUpdate, glazingUpdate, packUpdate) {
 
 function baseChange(rollType) {
   let baseUpdate = 2.49;
-  if (rollType == rollNames[0].name) {
-    baseUpdate = rollNames[0].value;
-  } else if (rollType == rollNames[1].name) {
-    baseUpdate = rollNames[1].value;
-  } else if (rollType == rollNames[2].name) {
-    baseUpdate = rollNames[2].value;
-  } else if (rollType == rollNames[3].name) {
-    baseUpdate = rollNames[3].value;
-  } else if (rollType == rollNames[4].name) {
-    baseUpdate = rollNames[4].value;
-  } else if (rollType == rollNames[5].name) {
-    baseUpdate = rollNames[5].value;
+  if (rollType == rollName[0].name) {
+    baseUpdate = rollName[0].value;
+  } else if (rollType == rollName[1].name) {
+    baseUpdate = rollName[1].value;
+  } else if (rollType == rollName[2].name) {
+    baseUpdate = rollName[2].value;
+  } else if (rollType == rollName[3].name) {
+    baseUpdate = rollName[3].value;
+  } else if (rollType == rollName[4].name) {
+    baseUpdate = rollName[4].value;
+  } else if (rollType == rollName[5].name) {
+    baseUpdate = rollName[5].value;
   } 
   
   return baseUpdate
