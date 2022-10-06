@@ -83,8 +83,7 @@ function baseChange(rollType) {
   } else if (rollType == rollNames[5].name) {
     baseUpdate = rollNames[5].value;
   } 
-
-
+  
   return baseUpdate
 }
 
@@ -99,6 +98,7 @@ function packChange(packSize) {
   } else if (packSize == packSizes[3].name) {
     packUpdate = packSizes[3].value;
   } 
+
   return packUpdate
 }
 
@@ -113,6 +113,7 @@ function glazeChange(rollGlazing) {
   } else if (rollGlazing == glazingNames[3].name) {
     glazingUpdate = glazingNames[3].value;
   } 
+
   return glazingUpdate
 }
 
@@ -124,7 +125,6 @@ constructor(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPri
     this.size = packSize;
     this.basePrice = basePrice;
     this.calculatedPrice = calculatedPrice;
-
     this.element = null;
 }
 }
