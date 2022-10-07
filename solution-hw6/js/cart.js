@@ -132,11 +132,14 @@ constructor(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPri
 const itemSet = new Set();
 
 function addToCart(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPrice) {
-    const cartItem = new Roll (rollImage, rollType, rollGlazing, packSize, basePrice,calculatedPrice);
+    const cartItem = new Roll (rollImages, rollNames, rollGlazingType, packSizeType, rollPrices, updatePrice());
     itemSet.add(cartItem);
-
+    console.log(cartItem);
     return cartItem;
+    saveToLocalStorage();
 }
+document.querySelector('.add-to-cart').addEventListener('click', addToCart)
+
 
 function calculateCartTotal () {
   let totalValue = 0
@@ -184,43 +187,36 @@ function deleteItem(cartItem) {
   itemSet.delete(cartItem);
 }
 
-const cartItemOne = addToCart(
-  "Assets/apple-cinnamon-roll.jpeg",
-  "Apple",
-  "Original",
-  3,
-  3.49,
-  updateCalculatedPrice(baseChange("Apple"), glazeChange("Original"), packChange("3"))
-);
 
-const cartItemTwo = addToCart(
-  "Assets/raisin-cinnamon-roll.jpeg",
-  "Raisin",
-  "Sugar Milk",
-  3,
-  2.99,
-  updateCalculatedPrice(baseChange("Raisin"), glazeChange("Sugar Milk"), packChange("3"))
-);
-
-const cartItemThree = addToCart(
-  "Assets/walnut-cinnamon-roll.jpeg",
-  "Walnut",
-  "Vanilla Milk",
-  12,
-  3.49,
-  updateCalculatedPrice(baseChange("Walnut"), glazeChange("Vanilla Milk"), packChange("12"))
-);
-
-const cartItemFour = addToCart(
-  "Assets/original-cinnamon-roll.jpeg",
-  "Original",
-  "Sugar Milk",
-  1,
-  2.49,
-  updateCalculatedPrice(baseChange("Original"), glazeChange("Sugar Milk"), packChange("1"))
-);
 
 for (const cartItem of itemSet) {
   console.log(cartItem);
   createElement(cartItem);
 }
+
+function saveToLocalStorage() {
+  let cartItemArray = Array.from(itemSet);
+  console.log(cartItemArray);
+
+  let cartItemJSON = JSON.stringify(cartItemArray);
+  console.log(cartItemJSON);
+
+  localStorage.setItem('storeItems', cartItemJSON);
+}
+
+function retrieveFromLocalStorage () {
+  let cartItemJSON = localStorage.getItem('storeItems');
+
+  if (cartItemJSON == null) {
+    return;
+  }
+
+  let cartItemArray = JSON.parse(cartItemJSON);
+
+  for (let itemData of cartItemArray) {
+    let cartItem = addToCart(itemData.rollImage, itemData.rollType, itemData.rollGlazing, itemData.packSize, itemData.basePrice, itemData.calculatedPrice);
+    createElement(cartItem);
+  }
+}
+
+retrieveFromLocalStorage();
