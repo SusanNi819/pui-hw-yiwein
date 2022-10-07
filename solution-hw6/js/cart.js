@@ -147,18 +147,20 @@ function addItemToCart (rollImage, rollType, rollGlazing, packSize, basePrice, c
 }
 
 function calculateCartTotal () {
-  let totalValue = 0
+  let totalValue = 0;
   for (const cartItem of itemSet) {
-    totalValue = totalValue + cartItem.calculatedPrice;
+    totalValue = totalValue + parseFloat(cartItem.calculatedPrice);
   }
   const updatedPrice = document.querySelector('#number');
   updatedPrice.innerText = "$ " + totalValue.toFixed(2);
+  console.log(itemSet);
 }
 
 function createElement(cartItem) {
   const template = document.querySelector('#cartItem-template');
   const clone = template.content.cloneNode(true);
   cartItem.element = clone.querySelector('.cartItem');
+  calculateCartTotal()
   const btnDelete = cartItem.element.querySelector('.cinnamon-rolls-footer');
   btnDelete.addEventListener('click', () => {
     deleteItem(cartItem);
@@ -186,9 +188,23 @@ function updateElement(cartItem) {
   rollPriceElement.innerText = "$ " + cartItem.calculatedPrice.toFixed(2);
 }
 
+function saveToLocalStorage() {
+  console.log(itemSet)
+  let cartItemArray = Array.from(itemSet);
+  console.log(cartItemArray);
+
+  let cartItemJSON = JSON.stringify(cartItemArray);
+  console.log(cartItemJSON);
+  localStorage.setItem('storeItems', cartItemJSON);
+
+}
+
 function deleteItem(cartItem) {
   cartItem.element.remove();
+
   itemSet.delete(cartItem);
+
+  saveToLocalStorage();
 }
 
 

@@ -17,20 +17,17 @@ function addToCart() {
     console.log("cart item saved");
     console.log(cartItemSaved);
     itemSet.add(cartItemSaved);
-    saveToLocalStorage();
+    addToLocalStorage();
     return cartItemSaved;
 }
 document.querySelector('.add-to-cart').addEventListener('click', addToCart)
 
   
 
-function saveToLocalStorage() {
+function addToLocalStorage() {
     console.log(itemSet)
     let cartItemArray = Array.from(itemSet);
     let data = JSON.parse(localStorage.getItem('storeItems'));
-    // data = [0, 1, 2]
-    // data.push(3)
-    // data = [0, 1, 2, 3]
     if (data == null) {
         data = [];
     }
