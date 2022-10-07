@@ -25,11 +25,21 @@ document.querySelector('.add-to-cart').addEventListener('click', addToCart)
   
 
 function saveToLocalStorage() {
+    console.log(itemSet)
     let cartItemArray = Array.from(itemSet);
+    let data = JSON.parse(localStorage.getItem('storeItems'));
+    // data = [0, 1, 2]
+    // data.push(3)
+    // data = [0, 1, 2, 3]
+    if (data == null) {
+        data = [];
+    }
+    data.push(cartItemArray[0]);
     console.log(cartItemArray);
+    console.log(data)
   
-    let cartItemJSON = JSON.stringify(cartItemArray);
+    let cartItemJSON = JSON.stringify(data);
     console.log(cartItemJSON);
-  
     localStorage.setItem('storeItems', cartItemJSON);
+
   }
