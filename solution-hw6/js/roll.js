@@ -7,7 +7,7 @@ const rollNames = rollChoseName.rollKeyName;
 const rollNameElement = document.querySelector('#catchline');
 rollNameElement.innerText = rollNames + " Cinnamon Roll";
 
-const rollPrices = rollChoseName.basePrice;
+const  rollPrices= rollChoseName.basePrice;
 const rollPriceElement = document.querySelector('#updatedPrice');
 rollPriceElement.innerText = "$ " + rollPrices;
 

@@ -60,7 +60,7 @@ for (let i = 0; i < allPackSize.length; i++) {
 }
 
 function updatePrice() {
-  return (basePrice + glazingUpdate) * packUpdate;
+  return (rollPrices + glazingUpdate) * packUpdate;
 }
 
 document.getElementById("glazing").addEventListener('change', glazingChange);
@@ -103,6 +103,6 @@ function packChange(element) {
     packSizeType = packPrice[3] + 2;
   } 
   basePrice = rollPrices;
-  const newPrice = updatePrice()
+  const newPrice = updatePrice();
   document.getElementById("updatedPrice").innerHTML = '$ ' + Math.round(newPrice*100)/100;
 }
