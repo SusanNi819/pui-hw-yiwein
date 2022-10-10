@@ -66,17 +66,17 @@ function updatePrice() {
 document.getElementById("glazing").addEventListener('change', glazingChange);
 function glazingChange(element) {
   let element1 = document.getElementById("glazing");
-  priceChange = element1.value;
-  if (priceChange == allGlazing[0].value) {
+  priceChange = element1.options[element1.selectedIndex].text;
+  if (priceChange == allGlazing[0].name) {
     glazingUpdate = allGlazing[0].value;
     rollGlazingType = allGlazing[0].name;
-  } else if (priceChange == allGlazing[1].value) {
+  } else if (priceChange == allGlazing[1].name) {
     glazingUpdate = allGlazing[1].value;
     rollGlazingType = allGlazing[1].name;
-  } else if (priceChange == allGlazing[2].value) {
+  } else if (priceChange == allGlazing[2].name) {
     glazingUpdate = allGlazing[2].value;
     rollGlazingType = allGlazing[2].name;
-  } else if (priceChange == allGlazing[3].value) {
+  } else if (priceChange == allGlazing[3].name) {
     glazingUpdate = allGlazing[3].value;
     rollGlazingType = allGlazing[3].name;
   }

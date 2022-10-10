@@ -144,7 +144,6 @@ function calculateCartTotal () {
   }
   const updatedPrice = document.querySelector('#number');
   updatedPrice.innerText = "$ " + totalValue.toFixed(2);
-  console.log(itemSet);
 }
 
 function createElement(cartItem) {
@@ -180,13 +179,13 @@ function updateElement(cartItem) {
 }
 
 function saveToLocalStorage() {
-  console.log(itemSet)
   let cartItemArray = Array.from(itemSet);
-  console.log(cartItemArray);
 
   let cartItemJSON = JSON.stringify(cartItemArray);
-  console.log(cartItemJSON);
+
   localStorage.setItem('storeItems', cartItemJSON);
+
+  console.log(localStorage.getItem('storeItems'));
 
 }
 
@@ -199,19 +198,17 @@ function deleteItem(cartItem) {
 }
 
 for (const cartItem of itemSet) {
-  console.log(cartItem);
   createElement(cartItem);
 }
 
 function retrieveFromLocalStorage () {
   let cartItemJSON = localStorage.getItem('storeItems');
-  console.log(cartItemJSON);
+
   if (cartItemJSON == null) {
     return;
   }
 
   let cartItemArray = JSON.parse(cartItemJSON);
-  console.log(cartItemArray);
 
   for (let itemData of cartItemArray) {
     let cartItem = addItemToCart(itemData.image, itemData.type, itemData.glazing, itemData.size, itemData.basePrice, itemData.calculatedPrice);
