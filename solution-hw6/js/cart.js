@@ -126,19 +126,10 @@ constructor(rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPri
     this.basePrice = basePrice;
     this.calculatedPrice = calculatedPrice;
     this.element = null;
-}
+  }
 }
 
 const itemSet = new Set();
-
-// function addToCart() {
-//     const cartItemSaved = new Roll (rollImages, rollNames, rollGlazingType, packSizeType, rollPrices, updatePrice().toFixed(2));
-//     console.log("cart item saved");
-//     console.log(cartItemSaved);
-//     saveToLocalStorage();
-//     return cartItemSaved;
-// }
-// document.querySelector('.add-to-cart').addEventListener('click', addToCart)
 
 function addItemToCart (rollImage, rollType, rollGlazing, packSize, basePrice, calculatedPrice) {
   const cartItem = new Roll (rollImage, rollType, rollGlazing, packSize, basePrice, parseFloat(calculatedPrice));
@@ -207,22 +198,10 @@ function deleteItem(cartItem) {
   saveToLocalStorage();
 }
 
-
-
 for (const cartItem of itemSet) {
   console.log(cartItem);
   createElement(cartItem);
 }
-
-// function saveToLocalStorage() {
-//   let cartItemArray = Array.from(itemSet);
-//   console.log(cartItemArray);
-
-//   let cartItemJSON = JSON.stringify(cartItemArray);
-//   console.log(cartItemJSON);
-
-//   localStorage.setItem('storeItems', cartItemJSON);
-// }
 
 function retrieveFromLocalStorage () {
   let cartItemJSON = localStorage.getItem('storeItems');

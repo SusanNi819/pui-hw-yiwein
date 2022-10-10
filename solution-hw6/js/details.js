@@ -22,8 +22,6 @@ function addToCart() {
 }
 document.querySelector('.add-to-cart').addEventListener('click', addToCart)
 
-  
-
 function addToLocalStorage() {
     console.log(itemSet)
     let cartItemArray = Array.from(itemSet);
@@ -31,6 +29,7 @@ function addToLocalStorage() {
     if (data == null) {
         data = [];
     }
+    
     data.push(cartItemArray[0]);
     console.log(cartItemArray);
     console.log(data)
@@ -38,5 +37,4 @@ function addToLocalStorage() {
     let cartItemJSON = JSON.stringify(data);
     console.log(cartItemJSON);
     localStorage.setItem('storeItems', cartItemJSON);
-
   }
